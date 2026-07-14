@@ -440,3 +440,27 @@ oc delete secret aws-cli-credentials -n <namespace>
 14. Enable AWS CLI debug logging for detailed diagnostics.
 
 Following this workflow provides a repeatable method for diagnosing Amazon S3 connectivity issues from an on-premises OpenShift cluster while ensuring that each layer—from credentials and DNS to networking and AWS authorization—is validated independently.
+
+CC0
+
+EOS Framework...
+- Portland Oragon
+- Who are the big players? Big changes
+- Luddites.. 
+- Project manager, integrate with jira, 
+- Narrowing niche, 
+- across teh board... 
+- Systems, timing, 
+- AI and agent driven development
+- First, LAst and Id Number
+
+- TSI hardware, Acutech and OHD
+- Similar equipmetn and databases
+- OHD - Runs off grid, 
+- connections in the community..
+- Testing centralization.
+- Startup ideas.
+- Mobile evals, 
+- hearing protection.
+- Centralized enployee data.
+- 
