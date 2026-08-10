@@ -1,0 +1,29 @@
+apiVersion: sources.knative.dev/v1beta1
+kind: KafkaSource
+metadata:
+  name: example-kafka-source
+  namespace: my-project
+spec:
+  bootstrapServers: 
+    - cluster-kafka-bootstrap.my-project.svc:9094
+  topics: 
+    - incoming-events
+  net:
+    tls:
+      caCert:
+        secretRef:
+          name: kafka-secret
+          key: ca.crt
+      clientCert:
+        secretRef:
+          name: kafka-secret
+          key: user.crt
+      clientKey:
+        secretRef:
+          name: kafka-secret
+          key: user.key
+  sink:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: event-consumer-service
